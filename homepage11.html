@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Road Incident Insights – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      background: #f7f9f9;
+      padding-top: 120px;
+      color: #0b2e33;
+    }
+
+    /* Sticky Header */
+    header {
+      width: 100%;
+      height: 120px;
+      background: #0b2e33;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .nav-wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      color: #F4F3EA;
+    }
+
+    /* Logo */
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: white;
+      margin-top: 5px;
+    }
+
+    .riv-icon {
+      height: 70px;
+      margin-bottom: 4px;
+    }
+
+    .riv-title {
+      font-size: 52px;
+      font-weight: 700;
+      margin: 0;
+      color: white;
+      letter-spacing: 3px;
+    }
+
+    .riv-subtitle {
+      font-size: 15px;
+      font-weight: 400;
+      margin: 0;
+      color: #f2b138;
+      letter-spacing: 1px;
+      margin-top: -4px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #F4F3EA;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Image */
+    .hero {
+      width: 1100px;
+      height: 500px;
+      margin: 40px auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Section Blocks */
+    .section-block {
+      width: 1100px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      color: #0b2e33;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-block h2 {
+      font-size: 40px;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    .section-block p {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 400;
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 20px;
+    }
+
+    .stat-card {
+      width: 230px;
+      height: 140px;
+      background: white;
+      color: #0b2e33;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: 0.2s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Who Are You Cards */
+    .who-grid {
+      display: flex;
+      justify-content: center;
+      gap: 55px;
+      margin-top: 30px;
+    }
+
+    .user-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+    }
+
+    .user-card {
+      width: 300px;
+      height: 330px;
+      background: white;
+      color: #0b2e33;
+      border-radius: 16px;
+      padding: 20px;
+      transition: 0.25s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .user-card:hover {
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      transform: scale(1.04);
+      cursor: pointer;
+    }
+
+    .user-image {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+
+    /* Footer */
+    footer {
+      background: #0b2e33;
+      padding: 40px 0;
+      margin-top: 20px;
+      color: white;
+    }
+
+    .footer-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Stacked Footer Logo */
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-icon {
+      height: 50px;
+      margin-bottom: 6px;
+    }
+
+    .footer-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0;
+      color: white;
+      letter-spacing: 2px;
+    }
+
+    .footer-subtitle {
+      font-size: 30px;
+      margin: 0;
+      margin-top: -4px;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-wrapper">
+
+      <!-- STACKED LOGO IN HEADER -->
+      <div class="logo-container">
+        <img src="rivwhite.png" alt="RIV Logo" style="height: 130px">
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav>
+        <ul>
+          <li><a href="homepage11.html">HOME</a></li>
+          <li><a href="#">DATA</a></li>
+          <li><a href="#">MISSION STATEMENT</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="contact page.html">CONTACT</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="hero">
+    <img src="https://www.racv.com.au/royalauto/transport/vic-road-rule-guides/freeway-rules-speed-breakdowns-victoria/_jcr_content/root/container/articlepagecontent/image.coreimg.jpeg/1755566113409/1400x600-mattharvey-westgate-22.jpeg" class="hero-img">
+  </div>
+
+  <div class="section-block">
+    <h2>OUR MISSION</h2>
+    <p>
+      Built to empower Victorians with transparent, data-driven insights into road incidents
+      to help reduce crashes and save lives. We aim to make complex transport data accessible
+      and meaningful for citizens, planners, and policymakers. By turning raw statistics into
+      clear visual stories, we support informed decisions that lead to safer roads and stronger
+      communities.
+    </p>
+  </div>
+
+  <div class="section-block">
+    <h2>RELEVANT AND IMPORTANT ROAD DATA</h2>
+
+    <div class="stats-grid">
+      <div class="stat-card">STAT 1</div>
+      <div class="stat-card">STAT 2</div>
+      <div class="stat-card">STAT 3</div>
+      <div class="stat-card">STAT 4</div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <h2>WHO ARE YOU?</h2>
+
+    <div class="who-grid">
+
+      <a href="level2.html?user=analyst" class="user-card-link">
+        <div class="user-card">
+         <h3>Traffic Analyst</h3>
+         <img src="https://img.freepik.com/free-photo/construction-worker-site_23-2151983464.jpg" alt="Analyst Image" class="user-image">
+         <p>Utilising our site to improve road safety.</p>
+        </div>
+      </a>
+
+      <a href="level2.html?user=citizen" class="user-card-link">
+        <div class="user-card">
+         <h3>Citizen</h3>
+         <img src="https://editorial.pxcrush.net/carsales/general/editorial/phone-use-while-driving-939829652.jpg?width=1024&height=682" alt="Citizen Image" class="user-image">
+         <p>Using our site to be informed on local risks.</p>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-actions">
+
+      <div class="footer-logo">
+        <img src="rivwhite.png" alt="RIV Logo" style="height: 100px">
+        <h3 class="footer-subtitle">Road Insights Victoria</h3>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>

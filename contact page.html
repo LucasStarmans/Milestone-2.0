@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Road Insights Victoria – Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      background: #f7f9f9;
+      padding-top: 120px;
+      color: #0b2e33;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      height: 120px;
+      background: #0b2e33;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .nav-wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      color: #F4F3EA;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #F4F3EA;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    
+    .contact-container {
+      width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact-title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .contact-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .contact-card {
+      width: 48%;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-photo {
+      width: 180px;
+      height: 180px;
+      background: #d9d9d9;
+      border-radius: 10px;
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .contact-name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    footer {
+      background: #0b2e33;
+      padding: 40px 0;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-subtitle {
+      font-size: 30px;
+      margin: 0;
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-wrapper">
+    <div class="logo-container">
+      <img src="rivwhite.png" alt="RIV Logo" style="height: 130px">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="homepage11.html">HOME</a></li>
+        <li><a href="#">DATA</a></li>
+        <li><a href="#">MISSION STATEMENT</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="contact page.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="contact-container">
+  <h2 class="contact-title">Contact Our Team</h2>
+
+  <div class="contact-grid">
+
+    <!-- Lucas -->
+    <div class="contact-card">
+      <img src="lucas.jpg" class="contact-photo" alt="Lucas Photo">
+      <h3 class="contact-name">Lucas Starmans</h3>
+      <p class="contact-info">
+        Phone: 0444 586 111 <br>
+        Email: lucasstarmans@gmail.com
+      </p>
+    </div>
+
+    <!-- Arnav -->
+    <div class="contact-card">
+      <img src="arnav.jpg" class="contact-photo" alt="Arnav Photo">
+      <h3 class="contact-name">Arnav Katar</h3>
+      <p class="contact-info">
+        Phone: __________ <br>
+        Email: __________
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <img src="rivwhite.png" alt="RIV Logo" style="height: 100px">
+    <h3 class="footer-subtitle">Road Insights Victoria</h3>
+  </div>
+</footer>
+
+</body>
+</html>
