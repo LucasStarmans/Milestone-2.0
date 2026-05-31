@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Road Insights Victoria – Mission Statement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      background: #f7f9f9;
+      padding-top: 120px;
+      color: #0b2e33;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      height: 120px;
+      background: #0b2e33;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .nav-wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      color: #F4F3EA;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #F4F3EA;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Header logo hover */
+    .logo-container a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .logo-container a img {
+      transition: 0.2s ease;
+    }
+
+    .logo-container a:hover img {
+      opacity: 0.8;
+    }
+
+    /* Section Block */
+    .section-block {
+      width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .section-text {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 400;
+    }
+
+    /* Footer */
+    footer {
+      background: #0b2e33;
+      padding: 40px 0;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-subtitle {
+      font-size: 30px;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .footer-home-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-home-link:hover {
+      opacity: 0.8;
+    }
+
+    .footer-home-link img {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-wrapper">
+    <div class="logo-container">
+      <a href="homepage11.html">
+        <img src="rivwhite.png" alt="RIV Logo" style="height: 130px">
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="homepage11.html">HOME</a></li>
+        <li><a href="#">DATA</a></li>
+        <li><a href="mission statement.html">MISSION STATEMENT</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="contact page.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- OUR MISSION -->
+<div class="section-block">
+  <h2 class="section-title">Our Mission</h2>
+  <p class="section-text">
+    Built to empower Victorians with transparent, data-driven insights into road incidents to help reduce crashes and save lives. We aim to make complex transport data accessible and meaningful for citizens, planners, and policymakers. By turning raw statistics into clear visual stories, we support informed decisions that lead to safer roads and stronger communities.
+  </p>
+</div>
+
+<!-- WHO WE SERVE -->
+<div class="section-block">
+  <h2 class="section-title">Who We Serve</h2>
+  <p class="section-text">
+    We are built for government agencies such as VicPol, DTP, TAC, private urban planning companies, and Victorian road users seeking up‑to‑date and relevant road incident information in their local area. We aim to be a free and accessible site to ensure road safety and reduce road incidents throughout the state.
+  </p>
+</div>
+
+<!-- HOW TO UTILISE THE SITE -->
+<div class="section-block">
+  <h2 class="section-title">How To Utilise The Site</h2>
+  <p class="section-text">
+    Our site allows users to view collated data from various sources and transform raw data into digestible insights. With filters, data can be trimmed down to display what is relevant to you and your needs without clutter or overwhelm. Navigate to the “Data” page, apply your desired filters, and quickly find the information you need with ease.
+  </p>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <a href="homepage11.html" class="footer-home-link">
+      <img src="rivwhite.png" alt="RIV Logo" style="height: 100px">
+      <h3 class="footer-subtitle">Road Insights Victoria</h3>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Road Insights Victoria – About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      background: #f7f9f9;
+      padding-top: 120px;
+      color: #0b2e33;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      height: 120px;
+      background: #0b2e33;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .nav-wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      color: #F4F3EA;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #F4F3EA;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Header logo hover */
+    .logo-container a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .logo-container a img {
+      transition: 0.2s ease;
+    }
+
+    .logo-container a:hover img {
+      opacity: 0.8;
+    }
+
+    /* Section Block */
+    .section-block {
+      width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-title {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    /* Founders Grid */
+    .founders-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .founder-card {
+      width: 48%;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .founder-photo {
+      width: 180px;
+      height: 180px;
+      background: #d9d9d9;
+      border-radius: 10px;
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .founder-name {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0b2e33;
+      padding: 40px 0;
+      margin-top: 20px;
+      color: white;
+    }
+
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-subtitle {
+      font-size: 30px;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    .footer-home-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-home-link:hover {
+      opacity: 0.8;
+    }
+
+    .footer-home-link img {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-wrapper">
+    <div class="logo-container">
+      <a href="homepage11.html">
+        <img src="rivwhite.png" alt="RIV Logo" style="height: 130px">
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="homepage11.html">HOME</a></li>
+        <li><a href="#">DATA</a></li>
+        <li><a href="mission statement.html">MISSION STATEMENT</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="contact page.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- FOUNDERS SECTION -->
+<div class="section-block">
+  <h2 class="section-title">Founders</h2>
+
+  <div class="founders-grid">
+    <div class="founder-card">
+      <img src="lucas.jpg" class="founder-photo" alt="Lucas Photo">
+      <h3 class="founder-name">Lucas Starmans</h3>
+    </div>
+
+    <div class="founder-card">
+      <img src="arnav.jpg" class="founder-photo" alt="Arnav Photo">
+      <h3 class="founder-name">Arnav Katar</h3>
+    </div>
+  </div>
+</div>
+
+<!-- WHY SECTION -->
+<div class="section-block">
+  <h2 class="section-title">Why?</h2>
+  <p style="font-size: 20px; line-height: 32px;">
+    We founded and created this site to enable users such as road users, and traffic analysts to gain an easier and more efficient understanding of road issues throughout Victoria. From our own observations of heightened road incidents, we decided to take action. This site transforms raw data into real and clear visual stories. We support and empower informed decisions that lead to safer roads and stronger communities, all thanks to data-driven insights.
+  </p>
+</div>
+
+<footer>
+  <div class="footer-logo">
+    <a href="homepage11.html" class="footer-home-link">
+      <img src="rivwhite.png" alt="RIV Logo" style="height: 100px">
+      <h3 class="footer-subtitle">Road Insights Victoria</h3>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
